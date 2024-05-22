@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <title>Mini-Project-TeguhRidho</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Coder" content="TeguhRidho" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    </div>
+    <div class="pembuka">
+      <div class="box"><h1 class="text">WELCOME</h1></div>
+      <pre>
+       <h5>Hallo Guyss,Selamat datang🤝
+Ini adalah web sederhana untuk menghitung nilai (Luas) dan (Keliling) segitiga🔺</h5>
+        </pre
+      >
+    </div>
+    <div class="Segitiga">
+      <h1 id="JudulSegitiga">SEGITIGA🔺</h1>
+      <img
+        src="asset/Segitiga.png"
+        alt="Segitiga"
+      />
+      <p1>Keterangan :</p1>
+      <pre>
+a = Sisi 1 (Alas) Segitiga
+b = Sisi 2 Segitiga
+c = Sisi 3 Segitiga
+t = Tinggi Segitiga
+</pre
+      >
+      <hr />
+      <h1 id="JudulLuasSegitiga">Hitung Luas Segitiga</h1>
+      <p1>Luas = (a/2)*t</p1>
+      <p></p>
+      <form class="luas">
+        <label for="alas">Alas</label>
+        <div class="alas">
+          <input type="number" id="alas" />
+        </div>
+        <label for="tinggi">Tinggi</label>
+        <div class="tinggi">
+          <input type="number" id="tinggi" />
+        </div>
+      </form>
+      <div class="button-container">
+        <input type="button" onClick="luas()" value="Hitung" />
+        <input type="button" onClick="resetLuas()" value="Reset" />
+      </div>
+      <p>Luas = <span id="luas"></span></p>
+      <hr />
+      <h1 id="JudulKelilingSegitiga">Hitung Keliling Segitiga</h1>
+      <p1>Keliling = a + b + c</p1>
+      <p></p>
+      <form class="keliling">
+        <label for="a">Sisi a</label>
+        <div class="a">
+          <input type="number" id="a" />
+        </div>
+        <label for="b">Sisi b</label>
+        <div class="b">
+          <input type="number" id="b" />
+        </div>
+        <label for="c">Sisi c</label>
+        <div class="c">
+          <input type="number" id="c" />
+        </div>
+      </form>
+      <div class="button-container">
+        <input type="button" onClick="keliling()" value="Hitung" />
+        <input type="button" onClick="resetKeliling()" value="Reset" />
+      </div>
+      <p>Keliling = <span id="keliling"></span></p>
+    </div>
+    <script src="js/script.js"></script>
+    <script>
+      function luas() {
+        const alas = document.getElementById("alas").value;
+        const tinggi = document.getElementById("tinggi").value;
+        const hasilLuas = (alas * tinggi) / 2;
+        document.getElementById("luas").textContent = hasilLuas;
+      }
+
+      function keliling() {
+        const a = document.getElementById("a").value;
+        const b = document.getElementById("b").value;
+        const c = document.getElementById("c").value;
+        const hasilKeliling = parseFloat(a) + parseFloat(b) + parseFloat(c);
+        document.getElementById("keliling").textContent = hasilKeliling;
+      }
+
+      function resetLuas() {
+        document.getElementById("alas").value = "";
+        document.getElementById("tinggi").value = "";
+        document.getElementById("luas").textContent = "";
+      }
+
+      function resetKeliling() {
+        document.getElementById("a").value = "";
+        document.getElementById("b").value = "";
+        document.getElementById("c").value = "";
+        document.getElementById("keliling").textContent = "";
+      }
+    </script>
+<footer>
+  <div class="footer-content">
+      <p>💌Follow my Instagram: ➡<a href="https://www.instagram.com/teguhridho8/.com" class="footer-link">TeguhRidho8</a></p>
+      <p>Mini Project | &copy; CopyRight 2024,Create By:Teguh Ridho✨</p>
+  </div>
+</footer>
+  </body>
+</html>

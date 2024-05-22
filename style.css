@@ -1,0 +1,114 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image:url('asset/background.png');
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.pembuka, #JudulSegitiga, #JudulLuasSegitiga, #JudulKelilingSegitiga {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pembuka {
+    padding: 20px;
+    background-image: url('asset/rumus.jpeg');
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(30, 30, 225, 0.1);
+    margin-bottom: 40px;
+}
+
+.text{
+    color: white;   
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#JudulSegitiga {
+    padding: 20px;
+    background-image: url('asset/board.jpeg');
+    color: white;
+    border-radius: 5px;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.button-container {
+    text-align: center;
+}
+
+input[type="button"] {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: cornflowerblue;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #3a5aa6;
+}
+
+p, pre {
+    margin: 20px auto;
+    max-width: 600px;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+footer {
+    background-color: #333;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
